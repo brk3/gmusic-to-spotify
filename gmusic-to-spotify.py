@@ -31,7 +31,7 @@ if token:
                 continue
 
             selection = 0
-            if len(filtered_data) > 2:
+            if len(filtered_data) > 1:
                 print('More than one source found, select from the following (-1 to skip):\n')
                 for count,external_url in enumerate([p.get('external_urls')
                                                      for p in filtered_data]):
